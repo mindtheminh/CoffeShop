@@ -1,0 +1,39 @@
+:root {
+  // Map helpers in some Sass environments fail when generating CSS custom
+  // property names dynamically. Explicitly list the most common entries so the
+  // stylesheet parses without tooling errors while still referencing Bootstrap
+  // variables.
+  --blue: #{map-get($colors, "blue")};
+  --indigo: #{map-get($colors, "indigo")};
+  --purple: #{map-get($colors, "purple")};
+  --pink: #{map-get($colors, "pink")};
+  --red: #{map-get($colors, "red")};
+  --orange: #{map-get($colors, "orange")};
+  --yellow: #{map-get($colors, "yellow")};
+  --green: #{map-get($colors, "green")};
+  --teal: #{map-get($colors, "teal")};
+  --cyan: #{map-get($colors, "cyan")};
+  --white: #{map-get($colors, "white")};
+  --gray: #{map-get($colors, "gray")};
+  --gray-dark: #{map-get($colors, "gray-dark")};
+
+  --primary: #{map-get($theme-colors, "primary")};
+  --secondary: #{map-get($theme-colors, "secondary")};
+  --success: #{map-get($theme-colors, "success")};
+  --info: #{map-get($theme-colors, "info")};
+  --warning: #{map-get($theme-colors, "warning")};
+  --danger: #{map-get($theme-colors, "danger")};
+  --light: #{map-get($theme-colors, "light")};
+  --dark: #{map-get($theme-colors, "dark")};
+
+  --breakpoint-xs: #{map-get($grid-breakpoints, "xs")};
+  --breakpoint-sm: #{map-get($grid-breakpoints, "sm")};
+  --breakpoint-md: #{map-get($grid-breakpoints, "md")};
+  --breakpoint-lg: #{map-get($grid-breakpoints, "lg")};
+  --breakpoint-xl: #{map-get($grid-breakpoints, "xl")};
+
+  // Use `inspect` for lists so that quoted items keep the quotes.
+  // See https://github.com/sass/sass/issues/2383#issuecomment-336349172
+  --font-family-sans-serif: #{inspect($font-family-sans-serif)};
+  --font-family-monospace: #{inspect($font-family-monospace)};
+}

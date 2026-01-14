@@ -1,0 +1,307 @@
+/* ============================================
+   Setting Pages Custom CSS
+   Yen Coffee House - Management System
+   ============================================ */
+
+/* Typography */
+.setting-page {
+    font-family: 'Poppins', 'Inter', 'Roboto', sans-serif;
+}
+
+/* Page Container - Centered with Max Width */
+.setting-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+/* Card Styling */
+.setting-card {
+    background: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border: none;
+    overflow: hidden;
+}
+
+.setting-card-header {
+    background: linear-gradient(135deg, #2563EB, #1E3A8A);
+    color: #FFFFFF;
+    padding: 1.5rem 1.75rem;
+    border-bottom: none;
+}
+
+.setting-card-header h5 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 1.25rem;
+    font-family: 'Poppins', 'Inter', 'Roboto', sans-serif;
+}
+
+.setting-card-body {
+    padding: 2rem;
+}
+
+/* Icon Container */
+.setting-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.setting-icon-circle {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(135deg, #2563EB, #1E3A8A);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    font-size: 4rem;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+}
+
+/* Form Labels */
+.setting-label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 0.5rem;
+    min-width: 180px;
+    display: block;
+    font-family: 'Poppins', 'Inter', 'Roboto', sans-serif;
+}
+
+.setting-label .text-danger {
+    color: #DC2626;
+}
+
+/* Form Inputs */
+.setting-input,
+.setting-select,
+.setting-textarea {
+    border-radius: 8px;
+    border: 1px solid #CBD5E1;
+    padding: 0.65rem 1rem;
+    font-size: 0.95rem;
+    font-family: 'Poppins', 'Inter', 'Roboto', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.setting-input:focus,
+.setting-select:focus,
+.setting-textarea:focus {
+    outline: none;
+    border-color: #2563EB;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.setting-textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Badge Styling */
+.setting-badge {
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 0.875rem;
+    font-family: 'Poppins', 'Inter', 'Roboto', sans-serif;
+}
+
+.setting-badge-primary {
+    background-color: #3B82F6;
+    color: #FFFFFF;
+}
+
+.setting-badge-success {
+    background-color: #16A34A;
+    color: #FFFFFF;
+}
+
+.setting-badge-secondary {
+    background-color: #6B7280;
+    color: #FFFFFF;
+}
+
+.setting-badge-info {
+    background-color: #3B82F6;
+    color: #FFFFFF;
+}
+
+/* Value Display */
+.setting-value {
+    font-size: 1rem;
+    color: #1F2937;
+    font-family: 'Poppins', 'Inter', 'Roboto', sans-serif;
+    word-break: break-word;
+}
+
+.setting-value code {
+    background-color: #F3F4F6;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    color: #1F2937;
+}
+
+/* Date Display */
+.setting-date {
+    font-size: 0.875rem;
+    color: #6B7280;
+    font-family: 'Poppins', 'Inter', 'Roboto', sans-serif;
+}
+
+/* Status Radio Buttons */
+.setting-status-radio {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.setting-status-radio .form-check {
+    margin: 0;
+}
+
+.setting-status-radio .form-check-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    font-family: 'Poppins', 'Inter', 'Roboto', sans-serif;
+}
+
+.setting-status-radio .form-check-input {
+    cursor: pointer;
+    margin-top: 0.25rem;
+}
+
+/* Buttons */
+.setting-btn {
+    border-radius: 8px;
+    padding: 0.65rem 1.5rem;
+    font-weight: 600;
+    font-family: 'Poppins', 'Inter', 'Roboto', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.setting-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.setting-btn-success {
+    background-color: #16A34A;
+    border-color: #16A34A;
+    color: #FFFFFF;
+}
+
+.setting-btn-success:hover {
+    background-color: #15803D;
+    border-color: #15803D;
+}
+
+.setting-btn-secondary {
+    background-color: #6B7280;
+    border-color: #6B7280;
+    color: #FFFFFF;
+}
+
+.setting-btn-secondary:hover {
+    background-color: #4B5563;
+    border-color: #4B5563;
+}
+
+.setting-btn-primary {
+    background-color: #2563EB;
+    border-color: #2563EB;
+    color: #FFFFFF;
+}
+
+.setting-btn-primary:hover {
+    background-color: #1D4ED8;
+    border-color: #1D4ED8;
+}
+
+/* Grid Layout - Perfect Alignment */
+.setting-field-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    gap: 1rem;
+}
+
+.setting-field-label {
+    min-width: 180px;
+    flex-shrink: 0;
+}
+
+.setting-field-value {
+    flex: 1;
+}
+
+/* Alert Message */
+.setting-alert {
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Poppins', 'Inter', 'Roboto', sans-serif;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .setting-container {
+        padding: 1rem 0.5rem;
+    }
+    
+    .setting-card-body {
+        padding: 1.5rem 1rem;
+    }
+    
+    .setting-field-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .setting-field-label {
+        min-width: unset;
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    
+    .setting-field-value {
+        width: 100%;
+    }
+    
+    .setting-status-radio {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+    
+    .setting-icon-circle {
+        width: 120px;
+        height: 120px;
+        font-size: 3rem;
+    }
+}
+
+/* Spacing Utilities */
+.setting-mb-3 {
+    margin-bottom: 1rem;
+}
+
+.setting-mt-3 {
+    margin-top: 1rem;
+}
+
+/* Readonly Textarea */
+.setting-textarea[readonly] {
+    background-color: #F9FAFB;
+    cursor: not-allowed;
+}
+
